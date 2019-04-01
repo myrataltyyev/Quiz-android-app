@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/txtCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="4dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtProfessorName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingBottom="6dp"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:layout_below="@id/txtCourseName"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+        <TextView android:id="@+id/txtNumOfQuestionsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Total Questions:"
+            android:textStyle="bold"
+            android:paddingTop="15dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView android:id="@+id/txtNumOfQuestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingBottom="15dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/txtNumOfQuestionsTitle"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

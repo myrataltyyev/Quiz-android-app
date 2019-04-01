@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".Main_screen.SignUp">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/main_toolbar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPhone"
+            android:hint="Phone Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:inputType="phone"
+            app:met_iconLeft="@drawable/ic_phone"
+            app:met_clearButton="true"
+            app:met_textColorHint="@color/fbutton_color_emerald"
+            app:met_floatingLabelAnimating="true"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="12"
+            app:met_primaryColor="@color/fbutton_color_emerald"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtName"
+            android:hint="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:inputType="text"
+            app:met_iconLeft="@drawable/ic_person"
+            app:met_clearButton="true"
+            app:met_textColorHint="@color/fbutton_color_emerald"
+            app:met_floatingLabelAnimating="true"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@color/fbutton_color_emerald"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPassword"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:inputType="textPassword"
+            app:met_iconLeft="@drawable/ic_lock"
+            app:met_clearButton="true"
+            app:met_textColorHint="@color/fbutton_color_emerald"
+            app:met_floatingLabelAnimating="true"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="25"
+            app:met_primaryColor="@color/fbutton_color_emerald"
+            app:met_singleLineEllipsis="true" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:theme="@style/RadioButton"
+            android:checkedButton="@id/btnProfessor">
+
+            <RadioButton
+                android:id="@+id/btnProfessor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Professor"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/btnStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Student"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/viewSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:text="Already Signed Up? Sign In"/>
+
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnSignUP"
+        android:text="Sign Up"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/fbutton_color_emerald"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
