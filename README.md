@@ -1,5 +1,5 @@
 # Quiz-android-app
-Android mobile application intended for usage of professors and students.
+Android mobile application intended for usage of professors and students. Implemented during internship in IT Center of International Oil and Gas University
 
 ## Software used
 * Android Studio
